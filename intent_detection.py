@@ -19,10 +19,15 @@ def augment_dataset(raw_data_path: str, training_data_path: str) -> None:
     data_augment.generate_new_content()
 
 
-def train_models(training_data_path: str) -> None:
+def train_models(training_data_path: str, raw_data_path: str) -> None:
     """
     Train all the models.
     """
+    # Bert few-shot classifier
+    bert_few_shot_clf = bert_classifier.BertClassifier(raw_data_path)
+    bert_few_shot_clf.train_model()
+    bert_few_shot_clf.save_model("models/bert-few-shot-model")
+
     # Bert classifier
     bert_clf = bert_classifier.BertClassifier(training_data_path)
     bert_clf.train_model()
@@ -82,6 +87,11 @@ def predict(X_test: List[str], y_test: List[str], path: str, training_data_path:
     """
     Evaluate and save predictions + metrics for each model.
     """
+    # Bert few-shot classifier
+    bert_few_shot_clf = bert_classifier.BertClassifier(path, model_path="models/bert-few-shot-model")
+    y_bert_few_shot = bert_few_shot_clf.predict(X_test)[0]
+    save_predictions_and_metrics(X_test, y_bert_few_shot, y_test, "bert_few_shot_clf")
+
     # Bert classifier
     bert_clf = bert_classifier.BertClassifier(path, model_path="models/bert-model")
     y_bert = bert_clf.predict(X_test)[0]
@@ -140,7 +150,7 @@ if __name__ == "__main__":
 
     if args.train:
         # Train and save models
-        train_models(training_data_path)
+        train_models(training_data_path, raw_data_path)
 
     if os.path.exists(testing_data_path):
         # Get test data

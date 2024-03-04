@@ -17,13 +17,13 @@ Quand mon vol décollera-t-il,flight_status
 Quand mon vol atterrira-t-il,flight_status
 quelle est la porte d'embarquement pour mon vol AF847,flight_status
 Quand vais-je arriver à destination,travel_suggestion
-Localiser les bagages perdus de Flight America Airlines à O'Hare,lost_luggage
+Localiser les bagages perdus de Flight America Airlines à O'Hare,book_flight
 Perte des bagages sur Flight America Airlines à O'Hare,carry_on
 Je pense que mes bagages ont été perdus,lost_luggage
 "Mes bagages sont manquants, j'étais sur le vol Frontier AB123 depuis Seattle",lost_luggage
 "Aide, j'ai perdu mes bagages",lost_luggage
-Savez-vous qui je devrais contacter car mes valises ne sont pas arrivées,book_flight
-À qui dois-je me plaindre que mes bagages n'arrivent pas à l'aéroport,lost_luggage
+Savez-vous qui je devrais contacter car mes valises ne sont pas arrivées,travel_suggestion
+À qui dois-je me plaindre que mes bagages n'arrivent pas à l'aéroport,travel_suggestion
 Veuillez suggérer des activités touristiques amusantes à Tokyo,travel_suggestion
 "Si je vais à Evans, que dois-je faire",travel_suggestion
 Quels sont les bons restaurants à Chicago,travel_suggestion
@@ -39,22 +39,22 @@ Y a-t-il une limite de poids pour mon bagage à main,carry_on
 Combien de bagages à main puis-je prendre pendant un vol avec United pour Lax,carry_on
 Quelles sont les règles concernant les bagages à main pour les vols Virgin Airlines,carry_on
 Y a-t-il une limite de poids de bagage cabine,carry_on
-Dois-je payer pour mes bagages à main,lost_luggage
-Réservez-moi une chambre du 11 au 15 novembre à Cali,book_hotel
+Dois-je payer pour mes bagages à main,travel_suggestion
+Réservez-moi une chambre du 11 au 15 novembre à Cali,book_flight
 Trouvez-moi un endroit où séjourner à Cali du 11 au 15 novembre,book_flight
-Quels hôtels ont des critiques décentes à Bangor,travel_alert
-Veuillez me trouver une chambre d'hôtel pour 4 personnes du lundi au mercredi à Lakewood,travel_alert
-"Trouvez un hôtel Columbus, Ohio avec de bonnes critiques",book_hotel
-"S'il vous plaît, aidez-moi à réserver un endroit où séjourner à Pittsburgh du lundi au vendredi",book_hotel
-J'ai besoin d'une chambre d'hôtel assez grande pour 4 personnes du lundi au mercredi à Lakewood,travel_alert
+Quels hôtels ont des critiques décentes à Bangor,out_of_scope
+Veuillez me trouver une chambre d'hôtel pour 4 personnes du lundi au mercredi à Lakewood,translate
+"Trouvez un hôtel Columbus, Ohio avec de bonnes critiques",out_of_scope
+"S'il vous plaît, aidez-moi à réserver un endroit où séjourner à Pittsburgh du lundi au vendredi",book_flight
+J'ai besoin d'une chambre d'hôtel assez grande pour 4 personnes du lundi au mercredi à Lakewood,translate
 Trouvez-moi des vols aller-retour de LAX vers SFOX,book_flight
 Réservez un vol de Chicago à DC lundi et revenant mercredi,book_flight
 Je recherche un vol aller-retour de AAF à DIA du 23 février au 28 février,book_flight
-Pourriez-vous faire une réservation de vol avec Air Emirates d'Orlando à Londres,book_flight
+Pourriez-vous faire une réservation de vol avec Air Emirates d'Orlando à Londres,travel_suggestion
 J'ai besoin de réserver un vol aller-retour de Dallas à Los Angeles du 2 au 10 mars,book_flight
 Je voudrais savoir quels vols sont disponibles sur El Paso à Dallas le 10 juin pour moins de 300 $,book_flight
 Combien coûte des frais de découvert pour la banque,out_of_scope
-Quelle taille d'essuie-glace cette voiture prend-t-elle,out_of_scope
+Quelle taille d'essuie-glace cette voiture prend-t-elle,carry_on
 Quel est le plus grand état des États-Unis,out_of_scope
 Quelle est la compagnie aérienne la plus populaire,out_of_scope
 Combien de planètes avons-nous découvert,out_of_scope
@@ -69,8 +69,8 @@ Quand Camus est-il mort,out_of_scope
 Quand Nintendo a-t-il été créé,out_of_scope
 Quel personnage Marvel est apparu dans le plus de films,out_of_scope
 Quels sont les avantages de terminer le lycée,out_of_scope
-Pouvez-vous me dire à quelle vitesse moyenne l'avion vers la Californie va,translate
+Pouvez-vous me dire à quelle vitesse moyenne l'avion vers la Californie va,travel_suggestion
 Est-il possible de louer une voiture à la Laguardia du mardi au vendredi,out_of_scope
 Que vaut un dollar au Mexique,out_of_scope
 Quel est le taux de change entre l'USD et l'euro,out_of_scope
-Pouvez-vous me dire le fuseau horaire à San Francisco,translate
+Pouvez-vous me dire le fuseau horaire à San Francisco,lost_luggage

@@ -1,0 +1,76 @@
+text,predicted_label
+"Pouvez-vous me dire comment dire «je ne parle pas beaucoup espagnol», en espagnol",out_of_scope
+Dites-moi comment dire: «C'est une belle matinée» en italien,out_of_scope
+"Si j'étais japonais, comment dirais-je que je suis touriste",out_of_scope
+Comment dire «hôtel» en finnois,out_of_scope
+"J'ai besoin que vous traduisiez la phrase, «nous y serons bientôt» en portugais",out_of_scope
+Veuillez me dire comment demander un taxi en français,out_of_scope
+Comment dire bonjour en anglais,out_of_scope
+La Corée du Nord a-t-elle des alertes de voyage que je devrais être conscientes,out_of_scope
+Y a-t-il des alertes de voyage pour la Syrie,out_of_scope
+Y a-t-il une alerte de voyage pour la Russie,out_of_scope
+Est-il sûr de se rendre en Islande,out_of_scope
+Parlez-moi des alertes de voyage émises pour l'Allemagne,out_of_scope
+Y a-t-il des nouvelles sur le vol DL123,out_of_scope
+Quand allons-nous commencer à monter à bord de mon vol prévu,out_of_scope
+Quand mon vol décollera-t-il,out_of_scope
+Quand mon vol atterrira-t-il,out_of_scope
+quelle est la porte d'embarquement pour mon vol AF847,out_of_scope
+Quand vais-je arriver à destination,out_of_scope
+Localiser les bagages perdus de Flight America Airlines à O'Hare,out_of_scope
+Perte des bagages sur Flight America Airlines à O'Hare,out_of_scope
+Je pense que mes bagages ont été perdus,out_of_scope
+"Mes bagages sont manquants, j'étais sur le vol Frontier AB123 depuis Seattle",out_of_scope
+"Aide, j'ai perdu mes bagages",out_of_scope
+Savez-vous qui je devrais contacter car mes valises ne sont pas arrivées,out_of_scope
+À qui dois-je me plaindre que mes bagages n'arrivent pas à l'aéroport,out_of_scope
+Veuillez suggérer des activités touristiques amusantes à Tokyo,out_of_scope
+"Si je vais à Evans, que dois-je faire",out_of_scope
+Quels sont les bons restaurants à Chicago,out_of_scope
+où devrais-je passer mon temps libre,out_of_scope
+Que puis-je faire à Nashville,out_of_scope
+Donnez-moi une liste de choses à faire à Orlando,out_of_scope
+Où est la meilleure cave du sud de la France,out_of_scope
+Y a-t-il des activités touristiques amusantes en Australie,out_of_scope
+Voulez-vous me faire part des restrictions de bagage à main pour American Airlines,out_of_scope
+Restrictions de cabine pour les émirats arabes unis,out_of_scope
+Qu'est-ce que je suis autorisé à prendre en cabine avec American Airlines,out_of_scope
+Y a-t-il une limite de poids pour mon bagage à main,out_of_scope
+Combien de bagages à main puis-je prendre pendant un vol avec United pour Lax,out_of_scope
+Quelles sont les règles concernant les bagages à main pour les vols Virgin Airlines,out_of_scope
+Y a-t-il une limite de poids de bagage cabine,out_of_scope
+Dois-je payer pour mes bagages à main,out_of_scope
+Réservez-moi une chambre du 11 au 15 novembre à Cali,out_of_scope
+Trouvez-moi un endroit où séjourner à Cali du 11 au 15 novembre,out_of_scope
+Quels hôtels ont des critiques décentes à Bangor,out_of_scope
+Veuillez me trouver une chambre d'hôtel pour 4 personnes du lundi au mercredi à Lakewood,out_of_scope
+"Trouvez un hôtel Columbus, Ohio avec de bonnes critiques",out_of_scope
+"S'il vous plaît, aidez-moi à réserver un endroit où séjourner à Pittsburgh du lundi au vendredi",out_of_scope
+J'ai besoin d'une chambre d'hôtel assez grande pour 4 personnes du lundi au mercredi à Lakewood,out_of_scope
+Trouvez-moi des vols aller-retour de LAX vers SFOX,out_of_scope
+Réservez un vol de Chicago à DC lundi et revenant mercredi,out_of_scope
+Je recherche un vol aller-retour de AAF à DIA du 23 février au 28 février,out_of_scope
+Pourriez-vous faire une réservation de vol avec Air Emirates d'Orlando à Londres,out_of_scope
+J'ai besoin de réserver un vol aller-retour de Dallas à Los Angeles du 2 au 10 mars,out_of_scope
+Je voudrais savoir quels vols sont disponibles sur El Paso à Dallas le 10 juin pour moins de 300 $,out_of_scope
+Combien coûte des frais de découvert pour la banque,out_of_scope
+Quelle taille d'essuie-glace cette voiture prend-t-elle,out_of_scope
+Quel est le plus grand état des États-Unis,out_of_scope
+Quelle est la compagnie aérienne la plus populaire,out_of_scope
+Combien de planètes avons-nous découvert,out_of_scope
+Combien de côtés dans un hexagone,out_of_scope
+Combien de temps dure l'hiver,out_of_scope
+qui est l'entraîneur des Chicago Bulls,out_of_scope
+Combien d'Oscars ont gagné les films Star Wars,out_of_scope
+Veuillez trouver la capitale du Pakistan ,out_of_scope
+qui est le personnage le plus effrayant de Start Trek,out_of_scope
+Quelle est la durée de vie de la batterie moyenne d'un téléphone Android,out_of_scope
+Quand Camus est-il mort,out_of_scope
+Quand Nintendo a-t-il été créé,out_of_scope
+Quel personnage Marvel est apparu dans le plus de films,out_of_scope
+Quels sont les avantages de terminer le lycée,out_of_scope
+Pouvez-vous me dire à quelle vitesse moyenne l'avion vers la Californie va,out_of_scope
+Est-il possible de louer une voiture à la Laguardia du mardi au vendredi,out_of_scope
+Que vaut un dollar au Mexique,out_of_scope
+Quel est le taux de change entre l'USD et l'euro,out_of_scope
+Pouvez-vous me dire le fuseau horaire à San Francisco,out_of_scope
