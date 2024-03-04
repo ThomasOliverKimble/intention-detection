@@ -153,14 +153,14 @@ class NeuralNetClassifier:
         self.criterion = nn.CrossEntropyLoss()
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=0.001)
 
-    def train_model(self, num_epochs: int = 20) -> None:
+    def train_model(self, num_epochs: int = 15) -> None:
         """
         Trains the model for a specified number of epochs.
 
         Args:
             num_epochs (int, optional): The number of epochs to train for. Defaults to 20.
         """
-        # Training over 20 epochs
+        # Training over epochs
         for epoch in range(num_epochs):
             for inputs, labels in self.train_loader:
                 outputs = self.model(inputs)
@@ -170,10 +170,10 @@ class NeuralNetClassifier:
                 loss.backward()
                 self.optimizer.step()
 
-            eval_accuracy = self.evaluate_model()
-            print(
-                f"Epoch {epoch+1}, Loss: {loss.item()}, Eval accuracy: {eval_accuracy}%"
-            )
+            # eval_accuracy = self.evaluate_model()
+            # print(
+            #     f"Epoch {epoch+1}, Loss: {loss.item()}, Eval accuracy: {eval_accuracy}%"
+            # )
 
     def evaluate_model(self) -> float:
         """

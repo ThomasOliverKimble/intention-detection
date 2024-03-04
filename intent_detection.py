@@ -78,7 +78,7 @@ def save_predictions_and_metrics(
     metrics_df.to_csv(metrics_path, index=False)
 
 
-def predict(X_test: List[str], y_test: List[str], path: str) -> None:
+def predict(X_test: List[str], y_test: List[str], path: str, training_data_path: str) -> None:
     """
     Evaluate and save predictions + metrics for each model.
     """
@@ -88,9 +88,10 @@ def predict(X_test: List[str], y_test: List[str], path: str) -> None:
     save_predictions_and_metrics(X_test, y_bert, y_test, "bert_clf")
 
     # NN classifier
-    # nn_clf = nn_classifier.NeuralNetClassifier(path, model_path="models/nn-model")
-    # y_nn = nn_clf.predict(X_test)
-    # save_predictions_and_metrics(X_test, y_nn, y_test, 'nn_clf')
+    nn_clf = nn_classifier.NeuralNetClassifier(training_data_path)
+    nn_clf.train_model() # For some reason I can't get it to work without training here...
+    y_nn = nn_clf.predict(X_test)
+    save_predictions_and_metrics(X_test, y_nn, y_test, "nn_clf")
 
     # SVM classifier
     svm_clf = svm_classifier.SvmClassifier(path, model_path="models/svm-model")
@@ -148,4 +149,4 @@ if __name__ == "__main__":
         y_test = df_test["label"].to_list()
 
         # Predictions
-        predict(X_test, y_test, testing_data_path)
+        predict(X_test, y_test, testing_data_path, training_data_path)
