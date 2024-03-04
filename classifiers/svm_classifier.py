@@ -8,19 +8,25 @@ from typing import List, Any
 
 
 class SvmClassifier:
-    def __init__(self, dataset_path: str, rs: int = 42) -> None:
+    def __init__(
+        self, dataset_path: str, rs: int = 42, model_path: Any = False
+    ) -> None:
         """
         Initializes the SvmClassifier using TFIDF for text with a dataset.
 
         Args:
             dataset_path (str): Path to the dataset file.
             rs (int, optional): Random state for reproducibility. Defaults to 42.
+            model_path (Any, optional): Model path if pretrained model. Defaults to False.
         """
-        self.model = SVC(random_state=rs)
-        self.vectorizer = TfidfVectorizer()
+        self.model = joblib.load(model_path) if model_path else SVC(random_state=rs)
+        self.vectorizer = (
+            joblib.load(model_path + "-vectorizer") if model_path else TfidfVectorizer()
+        )
 
         # Load dataset
-        self.load_dataset(dataset_path)
+        if not model_path:
+            self.load_dataset(dataset_path)
 
     def load_dataset(self, dataset_path: str) -> None:
         """
@@ -63,6 +69,7 @@ class SvmClassifier:
         """
         # Save the trained model to the specified path
         joblib.dump(self.model, path)
+        joblib.dump(self.vectorizer, path + "-vectorizer")
 
     def predict(self, texts: List[str]) -> List[str]:
         """

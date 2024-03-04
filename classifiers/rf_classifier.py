@@ -8,19 +8,29 @@ from typing import List, Any
 
 
 class RandomForestTextClassifier:
-    def __init__(self, dataset_path: str, rs: int = 42) -> None:
+    def __init__(
+        self, dataset_path: str, rs: int = 42, model_path: Any = False
+    ) -> None:
         """
         Initializes the RandomForestTextClassifier using CountVectorizer for text (BoW) with a dataset.
 
         Args:
             dataset_path (str): The file path to the dataset.
             rs (int, optional): Random state for reproducibility. Defaults to 42.
+            model_path (Any, optional): Model path if pretrained model. Defaults to False.
         """
-        self.model = RandomForestClassifier(random_state=rs)
-        self.vectorizer = CountVectorizer()
+        self.model = (
+            joblib.load(model_path)
+            if model_path
+            else RandomForestClassifier(random_state=rs)
+        )
+        self.vectorizer = (
+            joblib.load(model_path + "-vectorizer") if model_path else CountVectorizer()
+        )
 
         # Load dataset
-        self.load_dataset(dataset_path)
+        if not model_path:
+            self.load_dataset(dataset_path)
 
     def load_dataset(self, dataset_path: str) -> None:
         """
@@ -62,6 +72,7 @@ class RandomForestTextClassifier:
         """
         # Save the trained model to the specified path
         joblib.dump(self.model, path)
+        joblib.dump(self.vectorizer, path + "-vectorizer")
 
     def predict(self, texts: List[str]) -> List[str]:
         """
