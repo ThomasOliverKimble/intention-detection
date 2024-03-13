@@ -1,7 +1,7 @@
 # Intention Detection
 
 ## Contexte
-ILLUIN développe, à travers son produit ILLUIN Dialogue, une suite conversationnelle permettant de créer et gérer des chatbots via différents canaux: site web, messagerie instantanée, serveur vocal, application mobile… 
+XXX développe, à travers son produit XXX Dialogue, une suite conversationnelle permettant de créer et gérer des chatbots via différents canaux: site web, messagerie instantanée, serveur vocal, application mobile… 
 Dans la conception d’un chatbot, l’une des premières étapes de traitement d’un message utilisateur (un verbatim) consiste à classifier l’intention exprimée avec un label prédéfini qui permet dans un second temps de déclencher un parcours adapté.
 Cette étape de classification est appelée détection d’intention.
 
